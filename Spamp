@@ -1,0 +1,45 @@
+#!/system/bin/bash
+
+#perusak
+#clear
+echo -e "============================="
+echo -e   Author:justahackers
+echo -e   Pilih aja bro jangan bingung
+echo -e "============================="
+echo -e "[A] install bahan
+echo -e "[1] spamwa
+echo -e "[2] spamsms
+echo -e "[3] perusak
+echo -e "[0] keluar/exit
+read -p "pilih sesuai input -> "pil
+if [ $pil == "A" ]
+then
+      pkg update && pkg upgrade
+      pkg install nano bash
+      pkg install python2  
+      pkg install toilet ifconfig fish wget -y
+      pkg install git
+      pkg install figlet
+      pkg install php
+elif [ $pil == "1" ]
+then
+      cd $HOME
+      git clone https:github.com/ryantzyryan/spamwa/
+      cd spamwa.sh
+elif [ $pil == "2" ]
+then
+      cd $HOME
+      git clone https://github.com/justahackers/perusak
+      cd perusak
+      python2 perusak.py
+elif [ $pil == "3" ]
+then
+      cd $HOME
+      git clone https:github.com/ryantzyryan/spamsms
+      cd spamsms.sh    
+elif [ $pil == "2" ]
+then   
+      cd $HOME
+      git clone https://github.com/justahackers/
+elif [ $pil == "0" ]
+then
